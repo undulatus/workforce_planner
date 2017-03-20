@@ -1,0 +1,218 @@
+"2017-03-16 10:38:12 [main] INFO  c.p.w.p.WorkforcePlannerApplication - Starting WorkforcePlannerApplication on Bryans-MBP with PID 3864 (/Users/Rupture/SpringProjects/WorkforcePlanner/target/classes started by Rupture in /Users/Rupture/SpringProjects/WorkforcePlanner)
+""2017-03-16 10:38:12 [main] DEBUG c.p.w.p.WorkforcePlannerApplication - Running with Spring Boot v1.4.5.RELEASE, Spring v4.3.7.RELEASE
+""2017-03-16 10:38:12 [main] INFO  c.p.w.p.WorkforcePlannerApplication - No active profile set, falling back to default profiles: default
+""2017-03-16 10:38:12 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c583ecf: startup date [Thu Mar 16 10:38:12 PHT 2017]; root of context hierarchy
+""2017-03-16 10:38:13 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e341d627] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-03-16 10:38:13 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-03-16 10:38:13 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-03-16 10:38:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+""2017-03-16 10:38:13 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-03-16 10:38:13 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-03-16 10:38:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+""2017-03-16 10:38:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-03-16 10:38:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-03-16 10:38:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-03-16 10:38:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-03-16 10:38:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+""2017-03-16 10:38:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+""2017-03-16 10:38:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-03-16 10:38:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-03-16 10:38:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-03-16 10:38:14 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-03-16 10:38:14 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-03-16 10:38:14 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-03-16 10:38:14 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+""2017-03-16 10:38:14 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+""2017-03-16 10:38:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-03-16 10:38:15 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'empServ'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pointwest.workforce.planner.service.EmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+""2017-03-16 10:38:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2017-03-16 10:38:15 [main] INFO  o.a.catalina.core.StandardService - Stopping service Tomcat
+""2017-03-16 10:38:15 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-03-16 10:38:15 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field empServ in com.pointwest.workforce.planner.controller.EmployeeController required a bean of type 'com.pointwest.workforce.planner.service.EmployeeService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.pointwest.workforce.planner.service.EmployeeService' in your configuration.
+
+""2017-03-16 10:38:28 [main] INFO  c.p.w.p.WorkforcePlannerApplication - Starting WorkforcePlannerApplication on Bryans-MBP with PID 3876 (/Users/Rupture/SpringProjects/WorkforcePlanner/target/classes started by Rupture in /Users/Rupture/SpringProjects/WorkforcePlanner)
+""2017-03-16 10:38:28 [main] DEBUG c.p.w.p.WorkforcePlannerApplication - Running with Spring Boot v1.4.5.RELEASE, Spring v4.3.7.RELEASE
+""2017-03-16 10:38:28 [main] INFO  c.p.w.p.WorkforcePlannerApplication - No active profile set, falling back to default profiles: default
+""2017-03-16 10:38:28 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c583ecf: startup date [Thu Mar 16 10:38:28 PHT 2017]; root of context hierarchy
+""2017-03-16 10:38:29 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e341d627] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-03-16 10:38:30 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-03-16 10:38:30 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-03-16 10:38:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+""2017-03-16 10:38:30 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-03-16 10:38:30 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-03-16 10:38:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+""2017-03-16 10:38:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-03-16 10:38:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-03-16 10:38:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-03-16 10:38:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-03-16 10:38:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+""2017-03-16 10:38:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+""2017-03-16 10:38:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-03-16 10:38:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-03-16 10:38:31 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-03-16 10:38:31 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-03-16 10:38:31 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-03-16 10:38:31 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-03-16 10:38:31 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+""2017-03-16 10:38:31 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+""2017-03-16 10:38:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-03-16 10:38:31 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'empServ'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pointwest.workforce.planner.service.EmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+""2017-03-16 10:38:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2017-03-16 10:38:31 [main] INFO  o.a.catalina.core.StandardService - Stopping service Tomcat
+""2017-03-16 10:38:31 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-03-16 10:38:31 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field empServ in com.pointwest.workforce.planner.controller.EmployeeController required a bean of type 'com.pointwest.workforce.planner.service.EmployeeService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.pointwest.workforce.planner.service.EmployeeService' in your configuration.
+
+""2017-03-16 11:07:53 [main] INFO  c.p.w.p.WorkforcePlannerApplication - Starting WorkforcePlannerApplication on Bryans-MBP with PID 4228 (/Users/Rupture/SpringProjects/WorkforcePlanner/target/classes started by Rupture in /Users/Rupture/SpringProjects/WorkforcePlanner)
+""2017-03-16 11:07:53 [main] DEBUG c.p.w.p.WorkforcePlannerApplication - Running with Spring Boot v1.4.5.RELEASE, Spring v4.3.7.RELEASE
+""2017-03-16 11:07:53 [main] INFO  c.p.w.p.WorkforcePlannerApplication - No active profile set, falling back to default profiles: default
+""2017-03-16 11:07:53 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c583ecf: startup date [Thu Mar 16 11:07:53 PHT 2017]; root of context hierarchy
+""2017-03-16 11:07:54 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e9c3074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-03-16 11:07:55 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-03-16 11:07:55 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-03-16 11:07:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+""2017-03-16 11:07:55 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-03-16 11:07:55 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-03-16 11:07:55 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+""2017-03-16 11:07:55 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-03-16 11:07:55 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-03-16 11:07:55 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-03-16 11:07:55 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-03-16 11:07:55 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+""2017-03-16 11:07:55 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+""2017-03-16 11:07:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-03-16 11:07:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-03-16 11:07:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-03-16 11:07:55 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-03-16 11:07:55 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-03-16 11:07:55 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-03-16 11:07:56 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+""2017-03-16 11:07:56 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+""2017-03-16 11:07:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+""2017-03-16 11:07:57 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:07:57 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-03-16 11:07:57 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+""2017-03-16 11:07:57 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-03-16 11:07:57 [main] INFO  c.p.w.p.WorkforcePlannerApplication - Started WorkforcePlannerApplication in 4.14 seconds (JVM running for 4.603)
+""2017-03-16 11:08:02 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-03-16 11:08:07 [http-nio-8080-exec-2] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2017-03-16 11:08:07 [http-nio-8080-exec-2] INFO  c.p.w.p.WorkforcePlannerApplication - Customers found with findAll():
+""2017-03-16 11:08:07 [http-nio-8080-exec-2] INFO  c.p.w.p.WorkforcePlannerApplication - -------------------------------
+""2017-03-16 11:08:07 [http-nio-8080-exec-2] INFO  c.p.w.p.WorkforcePlannerApplication - batanes
+""2017-03-16 11:08:07 [http-nio-8080-exec-2] INFO  c.p.w.p.WorkforcePlannerApplication - avendano
+""2017-03-16 11:08:07 [http-nio-8080-exec-2] INFO  c.p.w.p.WorkforcePlannerApplication - 
+""2017-03-16 11:19:19 [RMI TCP Connection(2)-192.168.43.148] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+""2017-03-16 11:19:19 [RMI TCP Connection(2)-192.168.43.148] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c583ecf: startup date [Thu Mar 16 11:07:53 PHT 2017]; root of context hierarchy
+""2017-03-16 11:19:19 [RMI TCP Connection(2)-192.168.43.148] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+""2017-03-16 11:19:19 [RMI TCP Connection(2)-192.168.43.148] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-03-16 11:19:19 [RMI TCP Connection(2)-192.168.43.148] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2017-03-16 11:19:27 [main] INFO  c.p.w.p.WorkforcePlannerApplication - Starting WorkforcePlannerApplication on Bryans-MBP with PID 4579 (/Users/Rupture/SpringProjects/WorkforcePlanner/target/classes started by Rupture in /Users/Rupture/SpringProjects/WorkforcePlanner)
+""2017-03-16 11:19:27 [main] DEBUG c.p.w.p.WorkforcePlannerApplication - Running with Spring Boot v1.4.5.RELEASE, Spring v4.3.7.RELEASE
+""2017-03-16 11:19:27 [main] INFO  c.p.w.p.WorkforcePlannerApplication - No active profile set, falling back to default profiles: default
+""2017-03-16 11:19:27 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c583ecf: startup date [Thu Mar 16 11:19:27 PHT 2017]; root of context hierarchy
+""2017-03-16 11:19:29 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e9c3074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-03-16 11:19:29 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-03-16 11:19:29 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-03-16 11:19:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+""2017-03-16 11:19:29 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-03-16 11:19:29 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-03-16 11:19:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+""2017-03-16 11:19:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-03-16 11:19:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-03-16 11:19:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-03-16 11:19:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-03-16 11:19:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+""2017-03-16 11:19:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+""2017-03-16 11:19:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-03-16 11:19:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-03-16 11:19:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-03-16 11:19:30 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-03-16 11:19:30 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-03-16 11:19:30 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-03-16 11:19:30 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+""2017-03-16 11:19:30 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+""2017-03-16 11:19:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+""2017-03-16 11:19:31 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+""2017-03-16 11:19:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-03-16 11:19:31 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+""2017-03-16 11:19:32 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-03-16 11:19:32 [main] INFO  c.p.w.p.WorkforcePlannerApplication - Started WorkforcePlannerApplication in 4.519 seconds (JVM running for 5.678)
+""2017-03-16 11:19:45 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-03-16 11:19:50 [http-nio-8080-exec-2] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2017-03-16 11:19:50 [http-nio-8080-exec-2] INFO  c.p.w.p.WorkforcePlannerApplication - Employees found with findAll():
+""2017-03-16 11:19:50 [http-nio-8080-exec-2] INFO  c.p.w.p.WorkforcePlannerApplication - -------------------------------
+""2017-03-16 11:19:50 [http-nio-8080-exec-2] INFO  c.p.w.p.WorkforcePlannerApplication - batanes
+""2017-03-16 11:19:50 [http-nio-8080-exec-2] INFO  c.p.w.p.WorkforcePlannerApplication - avendano
+""2017-03-16 11:19:50 [http-nio-8080-exec-2] INFO  c.p.w.p.WorkforcePlannerApplication - 
+""2017-03-16 11:20:04 [http-nio-8080-exec-5] INFO  c.p.w.p.WorkforcePlannerApplication - Employees found with findByLastName(batanes):
+""2017-03-16 11:20:04 [http-nio-8080-exec-5] INFO  c.p.w.p.WorkforcePlannerApplication - -------------------------------
+""2017-03-16 11:20:04 [http-nio-8080-exec-5] INFO  c.p.w.p.WorkforcePlannerApplication - bryan
+""2017-03-16 11:20:04 [http-nio-8080-exec-5] INFO  c.p.w.p.WorkforcePlannerApplication - 
+""2017-03-16 17:10:13 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c583ecf: startup date [Thu Mar 16 11:19:27 PHT 2017]; root of context hierarchy
+""2017-03-16 17:10:13 [Thread-3] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+""2017-03-16 17:10:13 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-03-16 17:10:13 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+"
