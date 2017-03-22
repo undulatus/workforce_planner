@@ -16,5 +16,21 @@ public class PayLevel {
 	
 	@Column(name="pay_level_name")
 	private String payLevelName;
+
+	public int getPayLevelId() {
+		return payLevelId;
+	}
+
+	public void setPayLevelId(int payLevelId) {
+		this.payLevelId = payLevelId;
+	}
+
+	public String getPayLevelName() {
+		return payLevelName;
+	}
+
+	public void setPayLevelName(String payLevelName) {
+		this.payLevelName = payLevelName;
+	}
 	
 }

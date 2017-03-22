@@ -16,5 +16,21 @@ public class MarketCircle {
 	
 	@Column(name="market_circle_name")
 	private String marketCircleName;
+
+	public int getMarketCircleId() {
+		return marketCircleId;
+	}
+
+	public void setMarketCircleId(int marketCircleId) {
+		this.marketCircleId = marketCircleId;
+	}
+
+	public String getMarketCircleName() {
+		return marketCircleName;
+	}
+
+	public void setMarketCircleName(String marketCircleName) {
+		this.marketCircleName = marketCircleName;
+	}
 	
 }

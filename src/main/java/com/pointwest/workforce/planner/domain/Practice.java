@@ -16,5 +16,21 @@ public class Practice {
 	
 	@Column(name="practice_name")
 	private String practiceName;
+
+	public int getPracticeId() {
+		return practiceId;
+	}
+
+	public void setPracticeId(int practiceId) {
+		this.practiceId = practiceId;
+	}
+
+	public String getPracticeName() {
+		return practiceName;
+	}
+
+	public void setPracticeName(String practiceName) {
+		this.practiceName = practiceName;
+	}
 	
 }

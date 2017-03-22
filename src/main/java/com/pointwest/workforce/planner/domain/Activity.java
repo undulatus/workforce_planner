@@ -19,6 +19,30 @@ public class Activity {
 	
 	@Column(name="is_custom")
 	private boolean isCustom;
+
+	public int getActivityId() {
+		return activityId;
+	}
+
+	public void setActivityId(int activityId) {
+		this.activityId = activityId;
+	}
+
+	public String getActivityName() {
+		return activityName;
+	}
+
+	public void setActivityName(String activityName) {
+		this.activityName = activityName;
+	}
+
+	public boolean isCustom() {
+		return isCustom;
+	}
+
+	public void setCustom(boolean isCustom) {
+		this.isCustom = isCustom;
+	}
 	
 	
 }
